@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <header class="header-nav">Python Documentation</header>
+
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Syntax">Syntax</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Indentation">Indentation</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Hello_World">Hello World</a>
+                </li>
+                <li><a class="nav-link" href="#Variables">Variables</a>
+                </li>
+                <li><a class="nav-link" href="#Scope">Scope</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a>
+                </li>
+                <li><a class="nav-link" href="#If_Elif">If Elif</a>
+                </li>
+                <li><a class="nav-link" href="#Else">Else</a>
+                </li>
+                <li><a class="nav-link" href="#Loops">Loops</a>
+                </li>
+                <li><a class="nav-link" href="#Functions">Functions</a>
+                </li>
+                <li><a class="nav-link" href="#Reference">Reference</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header class="headers">Introduction</header>
+            <article>
+                <p>
+                    Python is a programming language widely used in web applications, software development, data science and machine learning (ML). Developers use Python because it is efficient and easy to learn, plus it can run on many different platforms. Python software is free to download, integrates well with all types of systems and increases the speed of development.
+                </p>
+                <p>
+                    Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+                    It is used for:
+                </p>
+                <ul>
+                    <li>Web development (server-side)</li>
+                    <li>Software development</li>
+                    <li>Mathematics</li>
+                    <li>System scripting</li>
+                    <li>Hacking etico</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Syntax">
+            <header class="headers">Syntax</header>
+            <article>
+                <p>
+                    The term syntax refers to the set of rules that define how code must be written in a given programming language. That is to say, it refers to the way in which we must write the instructions so that the computer, or rather programming language, understands us.
+                </p>
+                <p>
+                    Syntax is to programming what grammar is to languages. In the same way that the sentence "I we are here" is not correct, the following code in Python would not be correct, since it does not respect the rules of the language.
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+
+                    <code>
+                        if ($variable){
+                            x=9;
+                        }
+                    </code>
+                </section>
+            </article>
+        </section>
+
+        <section class="main-section" id="Indentation">
+            <header class="headers">Indentation</header>
+            <article>
+                <p>
+                    Indentation refers to the spaces at the beginning of a code line.
+
+                    Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+                    Python uses indentation to indicate a block of code.
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <code>
+                        if 5 > 2:
+                            print("Five is greater than two!")
+                    </code>
+                </section>
+            </article>
+        </section>
+
+        <section class="main-section" id="Hello_World">
+            <header class="headers">Hello World</header>
+            <article>
+                <p>
+                    To get started with writing Python, open the Scratchpad and write your first "Hello world" Python code:
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <code>
+                        print("Hello world")
+                    </code>
+                </section>
+            </article>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header class="headers">Variables</header>
+            <article>
+                <p>
+                    Variables in Python can be created by assigning a value to a name without first declaring it.
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <code>
+                        x = 10
+                        y = "Nombre"
+                        z = 3.9
+                    </code>
+                </section>
+                <p>
+                    We can assign any name we want, respecting not to use Python reserved words, spaces, hyphens or numbers at the beginning.
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <code>
+                        # Valid
+                        _variable = 10
+                        vari_able = 20
+                        variable10 = 30
+                        variable = 60
+                        variaBle = 10
+                    </code>
+                </section>
+            </article>
+        </section>
+
+        <section class="main-section" id="Scope">
+            <header class="headers">Scope</header>
+            <article>
+                <p>
+                    First, we can say that variables declared outside a function have global scope. On the other hand, those defined inside a function have local scope to the function. In general, the former are said to be global variables and the latter local variables. Global variables are valid during program execution, while local variables can only be used within the function in which they are declared.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header class="headers">Data Types</header>
+            <article>
+                <p>
+                    In programming, data type is an important concept.
+                    Variables can store data of different types, and different types can do different things.Python has the following data types built-in by default, in these categories:
+                </p>
+                <ul>
+                    <li>Text Type:	<code>str</code></li>
+                    <li>Numeric Types:	<code>int, float, complex</code></li>
+                    <li>Sequence Types:	<code>list, tuple, range</code></li>
+                    <li>Mapping Type:	<code>dict</code></li>
+                    <li>Set Types:	<code>set, frozenset</code></li>
+                    <li>Boolean Type:	<code>bool</code></li>
+                    <li>Binary Types:	<code>bytes, bytearray, memoryview</code></li>
+                    <li>None Type:	<code>NoneType</code></li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="If_Elif">
+            <header class="headers">If Elif</header>
+            <article>
+                <p>
+                    Python supports the usual logical conditions from mathematics:
+                </p>
+                <ul>
+                    <li>Equals: <code>a == b</code></li>
+                    <li>Not Equals: <code>a != b</code></li>
+                    <li>Less than: <code>a < b</code></li>
+                    <li>Less than or equal to: <code>a <= b</code></li>
+                    <li>Greater than: <code>a > b</code></li>
+                    <li>Greater than or equal to: <code>a >= b</code></li>
+                </ul>
+                <p>
+                    These conditions can be used in several ways, most commonly in "if statements" and loops.
+                    An "if statement" is written by using the if keyword.
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <p>if statement: </p>
+                    <code>
+                        a = 33
+                        b = 200
+                        if b > a:
+                            print("b is greater than a")
+                    </code>
+                </section>
+                <p>
+                    In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".
+                </p>
+                <p><strong>elif</strong></p>
+                <p>
+                    The <code>elif</code> keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <p>elif statement: </p>
+                    <code>
+                        a = 33
+                        b = 33
+                        if b > a:
+                            print("b is greater than a")
+                        elif a == b:
+                            print("a and b are equal")
+                    </code>
+                </section>
+                <p>
+                    In this example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that "a and b are equal".
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Else">
+            <header class="headers">Else</header>
+            <article>
+                <p>
+                    The else keyword catches anything which isn't caught by the preceding conditions.
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <p>else statement: </p>
+                    <code>
+                        a = 33
+                        b = 33
+                        if b > a:
+                            print("b is greater than a")
+                        elif a == b:
+                            print("a and b are equal")
+                    </code>
+                </section>
+                <p>
+                    In this example a is greater than b, so the first condition is not true, also the elif condition is not true, so we go to the else condition and print to screen that "a is greater than b".
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Loops">
+            <header class="headers">Loops</header>
+            <article>
+                <p>
+                    Python has two primitive loop commands:
+                </p>
+                <ul>
+                    <li><code>while</code> loops</li>
+                    <li><code>for</code> loops</li>
+                </ul>
+                <p><strong>while</strong></p>
+                <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <p>Print i as long as i is less than 6: </p>
+                    <code>
+                        i = 1
+                        while i < 6:
+                            print(i)
+                            i += 1
+                    </code>
+                </section>
+                <p>
+                    Note: remember to increment i, or else the loop will continue forever.
+
+                    The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1
+                </p>
+                <p><strong>for</strong></p>
+                <p>
+                    A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+                    This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+
+                    With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+                </p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <p>Print each fruit in a fruit list: </p>
+                    <code>
+                        fruits = ["apple", "banana", "cherry"]
+                        for x in fruits:
+                            print(x)
+                    </code>
+                </section>
+                <p>
+                    The for loop does not require an indexing variable to set beforehand.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header class="headers">Functions</header>
+            <article>
+                <p>
+                    A function is a block of code which only runs when it is called.
+                    You can pass data, known as parameters, into a function.
+                    A function can return data as a result.
+                </p>
+                <p><strong>Creating a Function</strong></p>
+                <p>In Python a function is defined using the def keyword:</p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <code>
+                        def my_function():
+                            print("Hello from a function")
+                    </code>
+                </section>
+                <p><strong>Calling a Function</strong></p>
+                <p>To call a function, use the function name followed by parenthesis:</p>
+                <section class="examples">
+                    <p><strong>Example: </strong></p>
+                    <code>
+                        def my_function():
+                            print("Hello from a function")
+
+                        <strong>my_function()</strong>
+                    </code>
+                </section>
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header class="headers">Reference</header>
+            <article>
+                <p>
+                    All the documentation in this page is taken from <a href="https://www.w3schools.com/python/python_functions.asp">W3S</a>
+                </p>
+            </article>
+        </section>
+
+    </main>
+    
+</body>
+</html>
